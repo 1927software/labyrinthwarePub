@@ -1,0 +1,9 @@
+#Redirect 302 help.html /doc/index.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^help\.html$ /cutmap/doc/index.html [R]

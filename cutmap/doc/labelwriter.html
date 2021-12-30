@@ -1,0 +1,137 @@
+<div class="container bs-docs-container">
+  <div class="row">
+    <div class="col-md-12" role="main">
+      <div class="cm-docs-section">
+        <h2 id="cm-labels" class="page-header">Printing Labels</h2>
+
+        <p>
+          Print labels for your cutlist using the CutMap Label Printer. First select a cutlist from the <em>Cutlist</em> tab in the CutMap extension. Then click the <em>Open Label Writer</em> button.
+        </p>
+        <!--<h5>You will see this screen:</h5>-->
+        <div class="pop">
+          <img src="../../assets/labelsTab.png"
+               style="width: 600px;">
+        </div>
+        <p>
+          This will bring up Chrome (or your default browser, see below<span class="glyphicon glyphicon-asterisk callout-asterisk-color"></span>) with the Label Writer page opened, and loaded with the boards of the selected cutlist.
+        </p>
+        <!--<h5>You will see this screen:</h5>-->
+        <div class="pop">
+          <img src="../../assets/labelPage.png"
+               style="width: 600px;">
+        </div>
+
+        <p>
+          The Label Printer page has three main sections along with the preview pane in the middle.
+        </p>
+        <div class="lpSec">Select records</div>
+        <p>
+          This section is where you can select which parts you want to print. Use the <em>All</em> option to quickly select all parts, or no parts. Click on the <img src="../../assets/editIcon.png" style="width: 20px;"> icon to change any of the specifications for a particular part such as the part name, width, and length. Note that the changes you make here only affect the printed label and will not change any values anywhere else in CutMap or SketchUp.
+        </p>
+
+        <div class="lpSec">Change label styles</div>
+        <p>
+          The <em>Change label styles</em> section lets you select the fields you want on your labels. Click on the <img src="../../assets/editIcon.png" style="width: 20px;"> icon to change the style of a field.
+        </p>
+
+        <div class="lpSec">Select template</div>
+        <p>
+          The Label Writer comes with a number of pre-loaded templates based on popular label styles available in the USA. You can also design your own templates. To design your own, first select a another template to base it on, then modify a dimension. A new template name will automatically be created. You can then rename or delete the new template using the <em>delete</em> and <em>rename</em> buttons.
+
+        </p>
+
+        <div class="lpSec">Calibrate to printer</div>
+        <p>
+          The Label Printer attempts to print as accurately as possible. A millimeter should print as a millimeter and an inch as an inch. However, every printer is different so you may find that you have to make an adjustment for your setup.
+        </p>
+        <p>
+          The <em>Size factor</em> field adjusts the label dimensions when sent to the printer by this value. It could be called a zoom factor. A value of 1 means the dimensions of the label are not adjusted at all. Lower values will make the printed dimensions smaller and a larger value will adjust the printed dimensions larger. The default value is 0.937 (just slightly less than 1:1) because that is value that we found worked best on the HP Laser printer we tested on.
+        </p>
+        <p>
+          The <em>Print label outline to check alignment</em> field allows you to print an outline around each defined label when printed. This is helpful when you are testing your template alignment. A good method is to print your test cases to blank paper, and then test the alignment by holding the printed page to label sheet.
+        </p>
+        <!--<span class="glyphicon glyphicon-education"></span>-->
+        <div class="callout-tips">
+          <div class="glyphicon glyphicon-education callout-icon-inset-tips">
+          </div>
+          <div class="callout-name-tips">Tip</div>
+          <br/>
+          <ul>
+            <li>Uses for the <em>Box</em> field on labels. <br/>
+              <img src="../../assets/labelWithBoxes.png"
+                   style=""><br/>
+              The small box outlines on labels can be used for many things, such as indicating edges that need special treatment. Another use for using the boxes is to mark a box when the edge indicated is final. For example:
+              <ul>
+                <li>First, prior to making any cuts at all, place the labels on your sheet in the approximate position where they will end up according to the cutlist, orienting all the labels in same direction. This will give you a good visual guide of your overall plans for the sheet. Consistently choosing either the good or bad side for your labels will also give you a good indicator of this important detail (particularly useful when quickly deciding which way to orient the board when making a cut). This strategy can be useful whether you use the boxes or not.</li>
+                <li>Then, whenever a cut is final for an edge on a board, mark the box on that edge. For instance, when you have edge trimmed a sheet then all boxes adjacent to that edge should be marked. If you are not planning to edge trim a side then mark those boxes immediately. When a cut divides two or more boards exactly, then mark the boxes on adjacent sides of the cut on all affected boards. </li>
+                <li>When all boxes on a board are marked you know the board is fully dimensioned and ready for the next process.</li>
+                <li>While the strategy is not needed for all situations is does have a number of advantages.
+                  <ul>
+                    <li>You pretty much instantly know the state and purpose of a sheet, a segment of a sheet, or a board.</li>
+                    <li>It quickly answers recurring questions such as "Which side is the good side?", "Have I edge trimmed this side?", "Do I have the grain oriented correctly for this board?", and "Do I orient the board up or down for this cut?"</li>
+                  </ul>
+                  By quickly providing this kind of information, these practices can lesson errors and also speed up the process. The downside is you do have to remember to mark the boxes.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="callout-tips">
+          <div class="glyphicon glyphicon-education callout-icon-inset-tips">
+          </div>
+          <div class="callout-name-tips">Tip</div>
+          <br/>
+          <ul>
+            <li>Use <em>Removable</em> labels on wood surfaces.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!--<div class="callout callout-asterisk" style="width: 600px;">-->
+        <!--<div class="glyphicon glyphicon-asterisk callout-color-asterisk callout-icon-inset"></div>-->
+        <div class="callout-asterisk">
+          <div class="glyphicon glyphicon-asterisk callout-icon-inset-asterisk">
+          </div>
+          <div class="callout-name-asterisk">Notes</div>
+          <br/>
+          <ul>
+            <li>
+              CutMap normally uses Google's Chrome browser to load the Label Writer. If Chrome is not installed on your computer you can download it <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">here</a>. You do not have to make it your default browser. If you don't want to install Chrome, you can set CutMap to use your default browser instead.
+              <p>
+                To make CutMap use your default browser, select the <em>Options</em> tab in the CutMap extension, then checkmark the <em>Use default browser for labels</em> option (you may have to scroll down to find it).
+              </p>
+              <p>
+                The reason CutMap uses Chrome, instead of the default browser, is because the Label Writer web application uses advanced features that may not work correctly in other browsers.
+              </p>
+              <p>
+                If you do use a browser other than Chrome, please let us know how it works out. We're not trying to to favor one browser over another, we just want to make sure that the labels are printed correctly.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <h5>Demonstration:</h5>
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/cfzjVpAn_bQ" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="callout-downloads">
+          <div class="glyphicon glyphicon-cloud-download callout-icon-inset-downloads">
+          </div>
+          <div class="callout-name-downloads">Downloads</div>
+          <br/>
+          <ul>
+            <li><a href="../../assets/sketchup/Shop%20Cabinet_in.skp" download>SketchUp file: Shop Cabinet (imperial units)</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
